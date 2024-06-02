@@ -2,6 +2,7 @@ const express = require("express")
 const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
+const attendanceRoute = require("./routes/attendanceRoute")
 const expressLayouts = require("express-ejs-layouts")
 
 app.set("view engine","ejs")
@@ -14,7 +15,7 @@ app.get("/",(req,res) => {
         title:"Home"
     })
 })
-
+app.use(attendanceRoute)
 const port = process.env.PORT
 const host = process.env.HOST
 app.listen (port,()=>{
