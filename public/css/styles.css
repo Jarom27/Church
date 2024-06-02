@@ -1,49 +1,115 @@
 /*https://coolors.co/12263a-06bcc1-c5d8d1-f4edea-f58a07*/
-:root{
+:root {
     --prussian-blue: #12263a;
     --robbin-egg-blue: #06bcc1;
     --ash-gray: #c5d8d1;
     --isabelline: #f4edea;
     --tangerine: #f58a07;
 }
-*{
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-h1,h2,h3{
-    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
-}
-p,a{
-    font-family: 'Nunito',Arial, Helvetica, sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+p,
+a {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+header {
+    padding: 0 1rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-nav{
+
+nav {
     width: 100%;
     background-color: var(--prussian-blue);
     color: var(--isabelline);
     padding: 1rem;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-nav ul li a{
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--isabelline);
     font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
-footer{
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
     background-color: var(--robbin-egg-blue);
 }
-.siteName a{
-    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+
+.siteName a {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+thead {
+    border-bottom: solid 1px var(--prussian-blue);
+}
+
+thead tr {
+    padding: 1rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+tbody tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+tbody tr td {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+tbody tr:nth-last-child() {
+    font-weight: 900;
+}
+
+.odd {
+    background-color: var(--ash-gray);
+}
+
+thead {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
