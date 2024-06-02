@@ -1,49 +1,62 @@
 /*https://coolors.co/12263a-06bcc1-c5d8d1-f4edea-f58a07*/
-:root{
+:root {
     --prussian-blue: #12263a;
     --robbin-egg-blue: #06bcc1;
     --ash-gray: #c5d8d1;
     --isabelline: #f4edea;
     --tangerine: #f58a07;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-h1,h2,h3{
-    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
-}
-p,a{
-    font-family: 'Nunito',Arial, Helvetica, sans-serif;
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+p,
+a {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
-nav{
+
+nav {
     width: 100%;
     background-color: var(--prussian-blue);
     color: var(--isabelline);
     padding: 1rem;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
-nav ul li a{
+
+nav ul li a {
+    color: var(--isabelline);
     font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
-footer{
+
+footer {
     background-color: var(--robbin-egg-blue);
 }
-.siteName a{
-    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+
+.siteName a {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     text-decoration: none;
 }
