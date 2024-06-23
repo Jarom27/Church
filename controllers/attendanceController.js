@@ -9,9 +9,17 @@ attendanceController.buildManagement = async function (req, res, next) {
         attendance
     })
 }
+attendanceController.buildInsertAttendanceForm = async function(req,res){
+    res.render("attedance/insert",{
+        title: "Añadir asistencia"
+    })
+}
 attendanceController.buildUpdateAttendanceForm = async function (req, res, next) {
     res.render("attendance/update", {
         title: "Editar Asistencia"
     })
+}
+attendanceController.updateAttendance = async function(req,res,next){
+    
 }
 module.exports = attendanceController
